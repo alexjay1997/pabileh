@@ -1,0 +1,172 @@
+*{
+
+    margin:0;padding:0;
+}
+h2{
+    font-family: Lobster;
+    font-weight: 400;
+ 
+}
+a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+.page-container{
+
+
+}
+
+.top-header{
+    padding:10px;
+   
+    background-color: #f7677e;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+  
+}
+.logo{
+    flex:1 0 150px;
+    padding:px;
+    width:250px;
+    color:#fafafa;
+    font-weight: 200;
+    line-height: 40px;
+
+}
+.search{
+
+  
+
+    flex:1 1 450px;
+    margin:5px;
+  
+  
+}
+#search_text{
+width:420px;
+padding:10px;
+border-radius:5px;
+outline-style: none;
+
+}
+.search-btn{
+
+
+    padding:10px;
+    width:100px;
+    border:1px solid red;
+    background: #4dd48f;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:14px;
+    
+    border-radius:5px;
+    border:none;
+  
+}
+.nav-login{
+    flex:1 0 160px;
+    padding:5px;
+    width:250px;
+    
+}
+nav ul{
+    max-width:100%;
+    float:right;
+    color:rgba(255, 255, 255, 0.933);
+}
+nav li{
+
+list-style: none;
+display: inline-block;
+width:80px;
+text-align: center;
+line-height: 30px;
+color:rgba(255, 255, 255, 0.933);
+}
+li a{
+    color:rgba(255, 255, 255, 0.933);
+    text-decoration: none;
+}
+.kv{
+    max-width:100%;
+    height:350px;
+    border-bottom:3px solid rgb(252, 196, 196);
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+ 
+    background-repeat: no-repeat;
+    padding:10px;
+}
+
+.sign-up-form{
+
+
+max-width:400px;
+margin:100px auto;
+padding:30px;
+box-shadow: 1px 1px 10px 2px #f7f5f5;
+}
+
+#login-form,#login-seller{
+
+
+
+  
+    width:400px;
+    margin:100px auto;
+    padding:30px;
+    box-shadow: 1px 1px 10px 2px #f7f5f5;
+    }
+
+
+ form input[type=text],input[type=password],input[type=date],input[type=email],input[type=number]{
+
+
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+.close-btn ,.close-btn-login{
+    float:right;
+    padding:10px;
+    margin:5px;
+color:rgb(238, 91, 91);
+cursor: pointer;
+    
+    
+}
+
+.close-btn-seller,.close-btn-login-seller{
+    float:right;
+    padding:10px;
+    margin:5px;
+color:rgb(238, 91, 91);
+cursor: pointer;
+}
+
+.reg-btn{
+    margin:5px;
+    padding:10px;
+    width:150px;
+    display: inline-block;
+    background: rgb(68, 151, 68);
+    color:#fff;
+    border:none;
+}
+.login-btn,.btn-add{
+    margin:5px;
+    padding:10px;
+    width:150px;
+    display: inline-block;
+    background: rgb(68, 151, 68);
+    color:#fff;
+    border:none;
+}
