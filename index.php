@@ -125,7 +125,7 @@
     <h2 style="color:#ff8096;">Sign-In Seller</h2>
 
         <input type="text" name="username" placeholder="Username"/>
-        <input type="text" name="password" placeholder="Password"/>
+        <input type="password" name="password" placeholder="Password"/>
         <input type="submit" name="login-seller" value="Sign-In" class="login-btn"><a href="#" id="login-customer">Customer?</a>
 
         </form>

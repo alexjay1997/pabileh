@@ -55,6 +55,13 @@ include_once 'dbh.inc.php';
         $result=mysqli_query($this->connection,$query);
         return $result;
     }
+
+    public function select_edit_product($ref_product_id){
+
+        $query ="Select * from tbl_products where id ='$ref_product_id'";
+        $result=mysqli_query($this->connection,$query);
+        return $result;
+    }
     
 
 

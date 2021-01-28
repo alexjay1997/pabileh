@@ -41,7 +41,7 @@ $current_seller_id = $_SESSION['id'];
 <div class="page-container">
     <div class="top-header">
         <div class="logo">
-            <h2>Pabili</h2>
+            <h2>Pabileh</h2>
             </div>
             <div class="nav-login">
             <nav class="main-nav">
@@ -52,8 +52,8 @@ $current_seller_id = $_SESSION['id'];
         </div>
     </div>
         
-    <div class="add_new_product_form" style="width:400px;box-shadow:1px 1px 10px 2px #ccc;padding:20px;margin:80px auto;">
-        <h2>Add new product</h2> 
+    <div class="add_new_product_form" style="max-width:400px;box-shadow:1px 1px 10px 2px #ccc;padding:20px;margin:80px auto;">
+        <h2 style="color:#f16a81;">Add new product</h2><br> 
         <form action="functions/create.func.php?seller_id=<?php echo $_SESSION['id'];?>" method="post" enctype="multipart/form-data">
         <input type="text" name="Prod_id" placeholder="Product ID" require/>
         <input type="text" name="Product_name" placeholder="Product Name" require/>
@@ -65,8 +65,10 @@ $current_seller_id = $_SESSION['id'];
         <input type="submit" name="add-product-btn" value="Add Product" class="addproduct-btn btn-add"><a href="seller.page.php" >Cancel?</a>
 
         </form>
-    </div><h2 style="text-align:center;color:#f16a81;">My Products</h2>
-    <table style="border-collapse:collapse;margin:40px auto;max-width:80%;box-shadow:1px 1px 10px 2px #eee;">
+    </div>
+    <h2 style="text-align:center;color:#f16a81;">My Products</h2>
+    <div class="table-wrapper"style="max-width:80%;overflow:auto;margin:40px auto;">
+    <table style="border-collapse:collapse;margin:40px auto;width:600px;box-shadow:1px 1px 10px 2px #eee;">
         <tr>
             <th>Product Id</th>
             <th>Product image</th>
@@ -74,6 +76,7 @@ $current_seller_id = $_SESSION['id'];
             <th>Product description</th>
             <th>Product price</th>
             <th>Product quantity</th>
+            <th>Actions</th>
            
         </tr>
         <?php
@@ -89,11 +92,12 @@ $current_seller_id = $_SESSION['id'];
             <td><?php echo $row['description'];?></td>
             <td>Php <?php echo $row['price'];?></td>
             <td><?php echo $row['quantity'];?></td>
+            <td><a href="edit_prod.php?product_ref=<?php echo $row['id'];?>"class="edit-prod-btn">Edit</a>&nbsp;<a href="edit_prod.php?product=<?php echo $row['id'];?>" class="delete-prod-btn">Delete</a></td>
         </tr>
     <?php
     }
     ?>
     </table>
-
+    </div>
 
 </div>

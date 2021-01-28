@@ -28,6 +28,15 @@ include 'dbh.inc.php';
             $result=mysqli_query($this->connection,$query);
             return $result;
     }
+
+    //update product 
+
+    public function update_seller_product($product_id,$product_name,$product_description,$product_price,$product_quantity,$product_img_folder,$product_ref){
+
+        $query="Update tbl_products set product_id='$product_id',product_name='$product_name',description='$product_description',price='$product_price',quantity='$product_quantity',product_image='$product_img_folder' where id='$product_ref'";
+        $result=mysqli_query($this->connection,$query);
+        return $result;
+    }
  }
 
 
